@@ -13,7 +13,7 @@ export const Achi = () => {
       } else {
         setLoading(true);
         try {
-          const response = await axios.get("http://localhost:3000/getprojects");
+          const response = await axios.get("http://localhost:3000/getachi");
           setData(response.data);
         } catch (error) {
           console.log(error);
