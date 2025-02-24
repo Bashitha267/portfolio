@@ -1,0 +1,13 @@
+@import "tailwindcss";
+section{
+  scroll-snap-align: center;
+  height: 100vh;
+}
+body{
+  padding: 5px;
+}
+.projectSection{
+  scroll-snap-align: start;
+  height: 150vh;
+  z-index: -50;
+}

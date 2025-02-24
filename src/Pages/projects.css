@@ -1,0 +1,11 @@
+/* projects.css */
+
+/* Hover effect for project images */
+img {
+    transition: transform 0.2s; /* Smooth transition for scaling */
+  }
+  
+  img:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+  }
+  

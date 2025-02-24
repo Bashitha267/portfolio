@@ -1,0 +1,15 @@
+.nav-bar-header{
+    height: 10vh;
+    font-size: larger;
+    z-index: 1000;
+}
+.heading{
+    font-weight: bold;
+    color: #eddff5; /* Lightest color for base */
+            text-shadow: 
+            0 0 4px #2f0a43, 
+            0 0 8px #553666, 
+            0 0 15px #6e527d, 
+            0 0 20px #8f5aaa;
+    font-family: Arial, sans-serif;
+}

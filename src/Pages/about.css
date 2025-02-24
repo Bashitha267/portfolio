@@ -1,0 +1,30 @@
+.skill-slider{
+    width: 80%;
+    display: flex;
+   
+}
+
+.skill-slider .item img{
+    width: 50%;
+  /* padding:18px; */
+  margin: auto; /* Ensures the image is centered */
+  display: block;
+}
+
+
+  .skill-bx{
+    height: 80vh;
+  }
+
+  .about{
+    background: #2E073F;
+  }
+
+  .item {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Make the middle item bigger */
+  .item:nth-child(2) {
+    transform: scale(1.2);
+  }
