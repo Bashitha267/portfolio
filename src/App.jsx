@@ -16,22 +16,22 @@ function App() {
       <NavBar/>
       </div>
       
-      <section id="home" className='mb-5' >
+      <section id="home" className='' >
         <Home/>
       </section>
-      <section id="about" className='mb-5' >
+      <section id="about" className='' >
         <About/>
       </section>
-      <section id="projects" className='mb-5'>
+      <section id="projects" className=''>
         <Projects/>
       </section>
-      <section id='blogs' className='mb-5' >
+      <section id='blogs' className='' >
         <Blogs/>
       </section>
-      <section id='achievements' className='mb-5'>
+      <section id='achievements' className=''>
         <Achi/>
       </section>
-      <section id="contact"  className='mb-5'>
+      <section id="contact"  className=''>
         <Contact/>
       </section>
       </div>
