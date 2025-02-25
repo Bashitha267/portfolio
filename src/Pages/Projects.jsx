@@ -25,7 +25,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="p-3">
+    <div className="p-3 mt-16">
       <h2 className="items-center md:text-4xl font-bold font-mono flex text-3xl mb-4 justify-center md:p-3 " style={{color:"#AD49E1"}}>
            My Projects
           </h2>
