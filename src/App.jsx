@@ -22,13 +22,13 @@ function App() {
       <section id="about" >
         <About/>
       </section>
-      <section id="projects" className='projectSection'>
+      <section id="projects" className=''>
         <Projects/>
       </section>
-      <section id='blogs' className='projectSection' >
+      <section id='blogs' className='' >
         <Blogs/>
       </section>
-      <section id='achievements' className='projectSection'>
+      <section id='achievements' className=''>
         <Achi/>
       </section>
       <section id="contact" >
