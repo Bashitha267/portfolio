@@ -55,7 +55,7 @@ export const About = () => {
     
       <div className="flex flex-col ">
         <div className="skill-bx  ">
-          <h2 className="items-center md:text-4xl font-bold font-mono flex text-3xl mb-4 justify-center md:p-3 " style={{color:"#AD49E1"}}>
+          <h2 className="items-center md:text-4xl font-bold font-mono flex text-3xl mb-4 justify-center md:p-3 mt-4" style={{color:"#AD49E1"}}>
             Skills
           </h2>
           <p className="items-center md:text-2xl font-bold font-mono mb-2 text-center md:p-4 md:ml-8 md:mr-8">
