@@ -26,20 +26,20 @@ export const Blogs = () => {
 
   return (
     <div className="p-3">
-      <h2 className="items-center md:text-4xl font-bold font-mono flex  justify-center md:p-3 m-3 " style={{color:"#AD49E1"}}>
-            Blogs
+    <h2 className="items-center md:text-4xl font-bold font-mono flex text-3xl mb-4 justify-center md:p-3 " style={{color:"#AD49E1"}}>
+           Blogs
           </h2>
-      <div className="grid grid-cols-4 gap-4 mt-4 ">
-        {data.map((item, index) => (
-          <div key={index} className="flex flex-row justify-center gap-4 m-4 ">
-            <a href={item.link} target="_blank"><img
-              src={item.image}
-              className=" object-cover hover:scale-110 transition-transform duration-300 w-72 h-72 " // Added hover effect
-              alt={item.title} 
-            /></a>
-          </div>
-        ))}
-      </div>
+    <div className="grid md:grid-cols-4 gap-4 mt-4 grid-cols-2">
+      {data.map((item, index) => (
+        <div key={index} className="flex flex-row justify-center gap-4 m-4 ">
+          <a href={item.link} target="_blank"><img
+            src={item.image}
+            className=" object-contain hover:scale-110 transition-transform duration-300 md:w-72 md:h-72 " // Added hover effect
+            alt={item.title} 
+          /></a>
+        </div>
+      ))}
     </div>
+  </div>
   );
 };
