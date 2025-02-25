@@ -31,7 +31,7 @@ export const NavBar = () => {
       {/* Navigation Menu (Centered) */}
       <div
         className={`absolute top-16 left-0 w-full bg-[#12071f] md:static md:top-0 md:w-auto md:flex md:flex-row md:gap-6 p-4 md:p-0 transition-all duration-300 flex-1 ${
-          menuOpen ? "block bg-purple-900 w-screen p-3 poppins-semibold" : "hidden"
+          menuOpen ? "block bg-purple-900 w-screen p-3 poppins-semibold text-right" : "hidden"
         }`}
       >
         <div className="flex flex-col gap-4 md:flex-row md:gap-6 text-white md:items-center text-xl font-mono font-light">
