@@ -55,10 +55,10 @@ export const About = () => {
     
       <div className="flex flex-col ">
         <div className="skill-bx  ">
-          <h2 className="items-center md:text-4xl font-bold font-mono flex  justify-center md:p-3 " style={{color:"#AD49E1"}}>
+          <h2 className="items-center md:text-4xl font-bold font-mono flex text-3xl mb-4 justify-center md:p-3 " style={{color:"#AD49E1"}}>
             Skills
           </h2>
-          <p className="items-center md:text-2xl font-bold font-mono  text-center md:p-4 md:ml-8 md:mr-8">
+          <p className="items-center md:text-2xl font-bold font-mono mb-2 text-center md:p-4 md:ml-8 md:mr-8">
           Skilled in React.js and Node.js for web development, alongside logo design and branding. Machine learning enthusiast with experience in using python libraries. Continuously learning and enhancing my expertise through practical projects.
           </p>
           {/* <div>{data.title}</div> */}
@@ -77,7 +77,7 @@ export const About = () => {
                  <div className="item flex flex-col justify-center">
                  <img src={item.image}></img>
                  <h5 className="text-center p-3 font-bold md:text-xl" style={{color:"#EBD3F8"}}>{item.title}</h5>
-                 <p className="md:p-6 md:text-md  text-fuchsia-100">
+                 <p className="md:p-6 md:text-lg text-lg  text-white">
                    {item.description}
                  </p>
                </div>
