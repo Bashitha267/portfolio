@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from "react-type-animation";
-import test1 from '../assets/test1.jpg';
+
 export const Home = () => {
     return (
         <div className="md:grid md:grid-cols-2 flex flex-col-reverse gap-3">
@@ -37,7 +37,7 @@ export const Home = () => {
             </div>
           </div>
           <div className='flex md:flex-col justify-center md:items-center'>
-            <img src={test1} className='w-60 h-60 object-contain md:w-96 md:h-96 '></img>
+            <img src="https://res.cloudinary.com/dnfbik3if/image/upload/v1740510756/test1_d3xsps.jpg" className='w-60 h-60 object-contain md:w-96 md:h-96 '></img>
           </div>
         </div>
       );
