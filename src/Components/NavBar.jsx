@@ -1,51 +1,61 @@
-import navicon1 from "../assets/nav-icon1.svg"
-import navi2 from '../assets/nav-icon2.svg'
-import navi3 from '../assets/nav-icon3.svg'
-import '../Components/navbar.css'
-import "./navbar.css"
+import { useState } from "react";
+import navicon1 from "../assets/nav-icon1.svg";
+import navi2 from "../assets/nav-icon2.svg";
+import navi3 from "../assets/nav-icon3.svg";
+import "../Components/navbar.css";
+import "./navbar.css";
+
 export const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="  md:flex md:flex-row nav-bar-header fixed top-0 w-full  text-white shadow-lg  " style={{ 
-      zIndex: 1000, 
-      background: "linear-gradient(to bottom, #12071f, #12071f)" 
-    }}
-     >
+    <div
+      className="fixed top-0 left-0 w-[95%] text-white shadow-lg flex items-center justify-between p-4 md:flex-row "
+      style={{
+        zIndex: 1000,
+        background: "linear-gradient(to bottom, #12071f, #12071f)",
+      }}
+    >
+      {/* Mobile Menu Button */}
+      <div className="md:hidden flex items-center">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
+          ☰
+        </button>
+      </div>
 
-        {/* section 1 */}
-        <div className="md:basis-100   md:flex md:flex-row md:items-center md:ml-5 md:mr-0 md:text-2xl md:font-mono md:font-bold heading">Nimesh Bashitha</div>
-        
-  
-        {/* section 2 */}
-        <div className="md:basis-250  md:flex md:flex-row md:gap-6  justify-end">
-            {/* pages */}
-            <div className='md:flex md:flex-row md:gap-6 text-white md:items-center justify-start md:pl-6 justify-items-start text-xl font-mono font-light'>
-                <div className="hover:text-[#AD49E1]" ><a href="#home" className="item123">Home</a></div>
-                <div className="hover:text-[#AD49E1] "><a href="#about">Skills</a></div>
-                <div className="hover:text-[#AD49E1]"><a href="#projects">Projects</a></div>
+      {/* Desktop Name Section (Left Side) */}
+      <div className=" heading hidden md:block md:text-2xl md:font-mono md:font-bold md:ml-5 md:mr-5">
+        Nimesh Bashitha
+      </div>
 
-                <div className="hover:text-[#AD49E1]"><a href="#blogs">Blogs </a></div>
-                <div className="hover:text-[#AD49E1]"><a href="#achievements">Achievements</a></div>
-                <div className="hover:text-[#AD49E1]"><a href="#contact">Contact</a></div>
-                </div> 
-                <div className="flex flex-row gap-6 p-2">
-            {/* social media */}
-            <div className='flex flex-row gap-3 items-center  '>
-              <div className="p-2 border-2 border-gray-900  rounded-full" style={{backgroundColor:"#AD49E1"}}><a href="https://www.linkedin.com/in/nimesh-bashitha-a87b2a33a" target="_blank"><img src={navicon1}></img></a></div>
-              <div className="p-2 border-2 border-gray-900 rounded-full " style={{backgroundColor:"#AD49E1"}}><img src={navi2}></img></div>
-              <div className="p-2 border-2 border-gray-900 rounded-full " style={{backgroundColor:"#AD49E1"}}><img src={navi3}></img></div>
+      {/* Navigation Menu (Centered) */}
+      <div
+        className={`absolute top-16 left-0 w-full bg-[#12071f] md:static md:top-0 md:w-auto md:flex md:flex-row md:gap-6 p-4 md:p-0 transition-all duration-300 flex-1 ${
+          menuOpen ? "block bg-purple-900 w-screen p-3 poppins-semibold" : "hidden"
+        }`}
+      >
+        <div className="flex flex-col gap-4 md:flex-row md:gap-6 text-white md:items-center text-xl font-mono font-light">
+          <a href="#home" className="hover:text-[#AD49E1]">Home</a>
+          <a href="#about" className="hover:text-[#AD49E1]">Skills</a>
+          <a href="#projects" className="hover:text-[#AD49E1]">Projects</a>
+          <a href="#blogs" className="hover:text-[#AD49E1]">Blogs</a>
+          <a href="#achievements" className="hover:text-[#AD49E1]">Achievements</a>
+          <a href="#contact" className="hover:text-[#AD49E1]">Contact</a>
+        </div>
+      </div>
 
-        
-              </div> 
-            {/* buttons */}
-            <div className="flex flex-row items-center  ">
-              <div className=" border-4 pl-3 pr-3 pt-2 pb-2" style={{borderColor:"#7A1CAC"}}>Lets Connect</div>
-              
-              </div> 
-              </div>
-            
-            </div>
-           
-        
+      {/* Social Media Icons (Right Side) */}
+      <div className="flex flex-row gap-3 items-center md:ml-auto">
+        <a href="https://www.linkedin.com/in/nimesh-bashitha-a87b2a33a" target="_blank" className="p-2 border-2 border-gray-900 rounded-full bg-[#AD49E1]">
+          <img src={navicon1} alt="LinkedIn" />
+        </a>
+        <div className="p-2 border-2 border-gray-900 rounded-full bg-[#AD49E1]">
+          <img src={navi2} alt="Social 2" />
+        </div>
+        <div className="p-2 border-2 border-gray-900 rounded-full bg-[#AD49E1]">
+          <img src={navi3} alt="Social 3" />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
