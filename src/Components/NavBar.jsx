@@ -24,17 +24,17 @@ export const NavBar = () => {
       </div>
 
       {/* Desktop Name Section (Left Side) */}
-      <div className=" heading hidden md:block md:text-2xl md:font-mono md:font-bold md:ml-5 md:mr-5">
+      <div className=" heading hidden md:block md:text-3xl md:font-mono md:font-bold md:ml-5 md:mr-5">
         Nimesh Bashitha
       </div>
 
       {/* Navigation Menu (Centered) */}
       <div
-        className={`absolute top-16 left-0 w-full bg-[#12071f] md:static md:top-0 md:w-auto md:flex md:flex-row md:gap-6 p-4 md:p-0 transition-all duration-300 flex-1 ${
+        className={`absolute top-16 left-0 w-full bg-[#12071f] md:relative  md:top-0 md:justify-center md:flex md:flex-row md:gap-6 p-4 md:p-0 transition-all duration-300 flex-1 ${
           menuOpen ? "block bg-purple-900 w-screen p-3 poppins-semibold text-right" : "hidden"
         }`}
       >
-        <div className="flex flex-col gap-4 md:flex-row md:gap-6 text-white md:items-center text-xl font-mono font-light">
+        <div className="flex flex-col gap-4 md:flex-row md:gap-8 text-white md:items-center text-xl md:text-3xl font-mono font-light ">
           <a href="#home" className="hover:text-[#AD49E1]">Home</a>
           <a href="#about" className="hover:text-[#AD49E1]">Skills</a>
           <a href="#projects" className="hover:text-[#AD49E1]">Projects</a>
