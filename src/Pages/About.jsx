@@ -47,7 +47,7 @@ export const About = () => {
           {data.map((item, index) => (
             <div className="flex flex-col gap-4 justify-center p-3 border-2 border-[#68288b]  bg-neutral-900">
               <div className="flex justify-center">
-                <img src={item.image} className="md:w-28 md:h-28 object-contain w-6 h-6 "></img>
+                <img src={item.image} className="md:w-28 md:h-28 object-contain w-8 h-8 "></img>
               </div>
               <div className="flex flex-col justify-center">
                 <div className="flex justify-center">
