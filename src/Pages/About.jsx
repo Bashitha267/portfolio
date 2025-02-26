@@ -6,25 +6,7 @@ import { useEffect, useState } from "react";
 import "./about.css";
 
 export const About = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+ 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -60,21 +42,21 @@ export const About = () => {
           using python libraries. Continuously learning and enhancing my
           expertise through practical projects.
         </p>
-        
-        <div className="flex flex-col justify-center md:grid-cols-2 md:grid p-3  ">
+        {/* <div>{data.title}</div> */}
+        <div className=" justify-center grid-cols-2 grid p-3 gap-4 ">
           {data.map((item, index) => (
-            <div className="flex flex-row gap-4 md:justify-center p-3 border-2 border-[#68288b]  ">
-              <div>
-                <img src={item.image} className="md:w-28 md:h-28 object-contain w-16 h-16"></img>
+            <div className="flex flex-col gap-4 justify-center p-3 border-2 border-[#68288b]  ">
+              <div className="flex justify-center">
+                <img src={item.image} className="md:w-28 md:h-28 object-contain w-8 h-8 "></img>
               </div>
-              <div className="flex flex-col">
-                <div>
-                <h5 className="text-xl" style={{ color: "#EBD3F8" }}>
+              <div className="flex flex-col justify-center">
+                <div className="flex justify-center">
+                <h5 className="text-xl text-justify flex" style={{ color: "#EBD3F8" }}>
                   {item.title}
                 </h5>
                 </div>
-               <div>
-               <p className="text-md">{item.description}</p>
+               <div className="flex justify-center"> 
+               <p className="text-md ">{item.description}</p>
 
                </div>
               </div>
@@ -82,7 +64,7 @@ export const About = () => {
           ))}
         </div>
 
-
+        
       </div>
     </div>
   );
