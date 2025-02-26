@@ -43,22 +43,19 @@ export const About = () => {
           expertise through practical projects.
         </p>
         {/* <div>{data.title}</div> */}
-        <div className=" justify-center grid-cols-2 grid p-3 gap-4 ">
+        <div className=" justify-center grid-cols-3 grid p-3 gap-4 text-white ">
           {data.map((item, index) => (
-            <div className="flex flex-col gap-4 justify-center p-3 border-2 border-[#68288b]  ">
+            <div className="flex flex-col gap-4 justify-center p-3 border-2 border-[#68288b]  bg-neutral-900">
               <div className="flex justify-center">
-                <img src={item.image} className="md:w-28 md:h-28 object-contain w-8 h-8 "></img>
+                <img src={item.image} className="md:w-28 md:h-28 object-contain w-6 h-6 "></img>
               </div>
               <div className="flex flex-col justify-center">
                 <div className="flex justify-center">
-                <h5 className="text-xl text-justify flex" style={{ color: "#EBD3F8" }}>
+                <h5 className="text-lg  flex text-center font-mono font-semibold text-white" style={{ color: "#EBD3F8" }}>
                   {item.title}
                 </h5>
                 </div>
-               <div className="flex justify-center"> 
-               <p className="text-md ">{item.description}</p>
-
-               </div>
+               
               </div>
             </div>
           ))}
